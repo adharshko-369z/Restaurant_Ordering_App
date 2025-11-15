@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Smythe", sans-serif;
+    background-color: #F5F5F5;
+    font-size: 16px;
+}
+
+.head{
+    background-image: url('images/nav-img.png');
+    width: 100%;
+    height: max-content;
+    text-align: left;
+    justify-content: center;
+    color: white;
+}
+.max-wid{
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+}
+
+h1{
+    margin: 0;
+    padding: 30px 0 0 30px;
+    font-size: 2.5rem;
+}
+
+.head p{
+    margin: 0;
+    padding: 0 0 30px 30px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.list-menu{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.each-items{
+    display: inherit;
+    justify-content: space-between;
+    align-items: start;
+    margin: 30px;
+    width: 100%;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+
+.data-style{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.item-properties{
+    text-align: left;
+}
+
+.item-img{
+    margin: 0;
+    font-size: 3.75rem;
+}
+
+.item-name{
+    margin: 0;
+}
+
+.item-properties p{
+    margin-top: 5px;
+}
+
+.item-ingredients{
+    margin-bottom: 5px;
+    color: #8B8B8B;
+}
+
+.item-price{
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+}
+
+.add-item-btn{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #DEDEDE;
+    background-color: #ffffff;
+}
+
+.order-items-section{
+    padding: 0 30px 0 30px;
+}
+
+.order-heading{
+    text-align: center;
+}
+
+.ordered-item, .total-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-name-btn{
+    display: flex;
+}
+
+.remove-btn{
+    border: none;
+    background-color: #ffffff;
+    color: #BBBBBB;
+    font-family: Verdana;
+    font-size:12px ;
+}
+
+.remove-btn:hover{
+    color: #6e6d6d;
+}
+
+.order-underline{
+    width: 100%;
+    height: 2px;
+    background-color: #393333;
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: lighter;
+}
+
+.complete-order-btn{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+.payment-section{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 100px #6e6d6d;
+    border-radius: 4px;
+    max-width: 500px;
+}
+
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.payment-section h2{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    border: 1.3px solid #757575;
+    font-size: 1rem;
+}
+
+.payment-form button{
+    padding: 10px 0 10px 0;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.success-message p{
+    background-color: #ECFDF5;
+    color: #065F46;
+    margin: 30px;
+    padding: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+}

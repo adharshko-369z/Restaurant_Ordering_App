@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="head max-wid">
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town.</p>
+    </header>
+    <main class="max-wid">
+        <section class="list-menu"id="list-menu">
+            <!-- Listing items here -->
+        </section>
+        <section class="order-items-section hidden" id="order-items-section">
+            <h2 class="order-heading">Your order<h2>
+            <div class="ordered-items" id="ordered-items">
+                <!-- Listing ordered items here -->
+            </div>
+            <div class="order-underline">
+
+            </div>
+            <div class="total-price">
+                <h2>Total price:</h2>
+                <p id="total-items-price">
+                    <!-- totalprice of items here -->
+                </p>
+            </div>
+            <button class="complete-order-btn" id="complete-order">Complete order</button>
+        </section>
+        <div class="payment-section max-wid hidden" id="payment-section">
+            <form class="payment-form" id="payment-form">
+                <h2>Enter card details</h2>
+                <input 
+                type="text" 
+                id="name" 
+                aria-label="fullName" 
+                placeholder="Enter your name" 
+                required>
+                <input
+                type="text"
+                id="cardNumber"
+                aria-label="cardNumber"
+                placeholder="Enter card number"
+                minlength="16"
+                required>
+                <input
+                type="text"
+                id="cvvNumber"
+                aria-label="cvvNumber"
+                placeholder="Enter CVV"
+                minlength="3"
+                required>
+                <button type="submit" id="pay-btn">Pay</button>
+            </form>
+        </div>
+        <div class="success-message max-wid" id="success-message">
+            <!-- success-message-here -->
+        </div>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

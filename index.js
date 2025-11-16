@@ -16,11 +16,12 @@ document.addEventListener('click',(e)=>{
     if(e.target.id === 'complete-order'){
         renderPaymentModal()
     }
-    
-    if(e.target.id==='pay-btn'){
-        e.preventDefault()
-        renderSuccessMessage()
-    }
+})
+
+//form validation
+document.getElementById('payment-form').addEventListener('submit',function(e){
+    e.preventDefault()
+    renderSuccessMessage()
 })
 
 // add item in array
@@ -54,8 +55,8 @@ function renderSuccessMessage(){
     document.getElementById('success-message').innerHTML=`
     <p>Thanks, ${customerName}! Your order is on its way!</p>
     `
-    document.getElementById('payment-form').reset()
     orderedItemsArr.length = 0
+    document.getElementById('payment-form').reset()
 }
 
 //render-payment-section

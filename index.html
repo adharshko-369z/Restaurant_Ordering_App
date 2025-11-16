@@ -37,22 +37,26 @@
                 <input 
                 type="text" 
                 id="name" 
-                aria-label="fullName" 
+                aria-label="Full Name" 
+                name="fullName"
                 placeholder="Enter your name" 
+                pattern="[a-zA-Z ]+"
                 required>
                 <input
                 type="text"
                 id="cardNumber"
-                aria-label="cardNumber"
+                aria-label="Card Number"
+                name="cardNumber"
                 placeholder="Enter card number"
-                minlength="16"
+                pattern="[0-9]{16}"
                 required>
                 <input
                 type="text"
                 id="cvvNumber"
-                aria-label="cvvNumber"
+                aria-label="CVV"
+                name="cvvNumber"
                 placeholder="Enter CVV"
-                minlength="3"
+                pattern="[0-9]{3}"
                 required>
                 <button type="submit" id="pay-btn">Pay</button>
             </form>

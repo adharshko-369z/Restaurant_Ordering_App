@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="head max-wid">
+    <div class="container">
+    <header class="head ">
         <h1>Jimmy's Diner</h1>
         <p>The best burgers and pizzas in town.</p>
     </header>
-    <main class="max-wid">
+    <main>
         <section class="list-menu"id="list-menu">
             <!-- Listing items here -->
         </section>
@@ -31,7 +32,7 @@
             </div>
             <button class="complete-order-btn" id="complete-order">Complete order</button>
         </section>
-        <div class="payment-section max-wid hidden" id="payment-section">
+        <div class="payment-section hidden" id="payment-section">
             <form class="payment-form" id="payment-form">
                 <h2>Enter card details</h2>
                 <input 
@@ -61,10 +62,11 @@
                 <button type="submit" id="pay-btn">Pay</button>
             </form>
         </div>
-        <div class="success-message max-wid" id="success-message">
+        <div class="success-message" id="success-message">
             <!-- success-message-here -->
         </div>
     </main>
+    </div>
     <script src="index.js" type="module"></script>
 </body>
 </html>
